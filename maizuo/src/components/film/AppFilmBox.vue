@@ -1,7 +1,6 @@
 
 <template>
     <div class="app-film-box">
-    	<!--{{type}}-->
     	<div
 		  v-infinite-scroll="loadMore"
 		  infinite-scroll-disabled="loading"
@@ -36,9 +35,6 @@
     	computed:mapState(['city']),
         methods:{
         	getFilms(){
-        		
-        		if(this.$route.name!='film') return false;
-        		
         		let that = this
         		let url = '/mz/v4/api/film/'+that.type
         		let params = {page:that.page,count:that.count,city:this.city}
@@ -50,7 +46,7 @@
         		axios.get(url,{params}).then(res=>{
         			
         			Indicator.close();
-        			console.log(res.data)
+//      			console.log(res.data)
         			that.films=that.films.concat(res.data.data.films)
         			that.loading = false
         			if(that.page==res.data.data.page.total){

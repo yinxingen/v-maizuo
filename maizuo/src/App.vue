@@ -7,11 +7,9 @@
     <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
       <div @click="toggleNav" v-if="isNavShow" class="mask"></div>
     </transition>
-    
-    <keep-alive include='app-main'>
+    <keep-alive>
     	<router-view></router-view>
     </keep-alive>
-    
   </div>
 </template>
 

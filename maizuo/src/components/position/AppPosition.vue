@@ -68,6 +68,7 @@
 	    
 	    &.gps{
 	    	color: #e2941a;
+	    	
 	    }
     }
 </style>

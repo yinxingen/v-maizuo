@@ -10,9 +10,9 @@
                <router-link :to="{name:'position'}" class="city">
                    {{city}} <i class="fa fa-sort-down"></i>
                </router-link>
-               <router-link to="/mine" class="user square">
+               <div class="user square">
                    <i class="fa fa-user-circle"></i>
-               </router-link>
+               </div>
            </div>
         </div>
     </div>
@@ -45,7 +45,7 @@
             right: 0;
             left: 0;
             width: auto;
-            height:50px;
+            height: 0.5rem;
             line-height: 0.5rem;
             overflow: hidden;
 

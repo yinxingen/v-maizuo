@@ -5,14 +5,12 @@ import App from './App'//根组件
 import router from './router'
 Vue.config.productionTip = false
 
-//iview
-
+////iview
 //import iView from 'iview';
 //import 'iview/dist/styles/iview.css';
 //Vue.use(iView)
-
-//element-ui
-
+//
+////element-ui
 //import ElementUI from 'element-ui'
 //import 'element-ui/lib/theme-chalk/index.css'
 //Vue.use(ElementUI)

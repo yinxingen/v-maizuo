@@ -1,8 +1,8 @@
 <template>
   <div class="app-good-list app-box">
       <AppGoodItem :good = "good" v-for="good in goods" :key="good.id"></AppGoodItem>
-<!--   		
-  		<Dropdown style="margin-left: 20px">
+  		
+  		<!--<Dropdown style="margin-left: 20px">
         <Button type="primary">
             下拉菜单
             <Icon type="arrow-down-b"></Icon>
@@ -11,8 +11,8 @@
             <DropdownItem v-for="(food,i) of foods" :key='i'>{{food}}</DropdownItem>
         </DropdownMenu>
     </Dropdown>
-    
-    <Button type="primary" @click="modal1 = true">Display dialog box</Button>
+    -->
+    <!--<Button type="primary" @click="modal1 = true">Display dialog box</Button>
     <Modal
         v-model="modal1"
         title="Common Modal dialog box title"
@@ -21,9 +21,9 @@
         <p>Content of dialog</p>
         <p>Content of dialog</p>
         <p>Content of dialog</p>
-    </Modal>
+    </Modal>-->
     
-    <el-date-picker
+    <!--<el-date-picker
       v-model="date"
       type="date"
       placeholder="选择日期">
@@ -37,7 +37,7 @@
 		  position='bottom'
 		  >
 		  <div class="pop"></div>
-	</mt-popup> -->
+		</mt-popup>-->
   </div>
 </template>
 <script>
@@ -74,11 +74,7 @@ export default {
   }
 }
 </script>
-<style scoped>
-	.pop{
-		width: 100vw;
-		height: 70vh;
-		background: #fff;
-	}
+<style>
+
 </style>
 
